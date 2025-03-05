@@ -1,0 +1,43 @@
+#techs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2.1875rem;
+}
+.section-subtitle {
+    margin-top: 30px;
+    font-size: 1.563rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icons {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap;  
+    gap: 40px; 
+    justify-content: center; 
+}
+
+.icons li {
+    display: flex; 
+    align-items: center; 
+}
+
+.icons img {
+    transition: transform 0.3s ease;
+    width: 100px; 
+    height: 100px;
+}
+
+.icons img:hover {
+    transform: scale(1.1); 
+}

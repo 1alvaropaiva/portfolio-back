@@ -1,0 +1,18 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2.1875rem;
+}
+
+.section-subtitle {
+    margin-top: 30px;
+    font-size: 1.563rem;
+    text-align: center;
+}

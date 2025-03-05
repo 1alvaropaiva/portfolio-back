@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="/images/code.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/about.css">
+    <link rel="stylesheet" href="/src/styles/tech.css">
+    <title>Alvaro | Back-end Developer</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">      
+            <ul id="nav_list">
+                <li class="nav_item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#techs">Tecnologias</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav_item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#techs">Tecnologias</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+            <button class="btn-default">
+                Fale comigo
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">
+                    Olá, meu nome é <a href="https://linkedin.com/in/1alvaropaiva" target="_blank">Alvaro Paiva.</a>
+                </h1>
+                <p class="description">Desenvolvedor Back-end</p>
+                <div id="cta_buttons">
+                    <a href="/src/documents/CV_Alvaro.pdf" download="CV_Alvaro.pdf" class="btn-default">
+                        Baixar Curriculum
+                    </a>
+                    <a href="#contact" class="btn-default" id="contato">
+                        Mensagem
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="/images/banner3.gif" alt="">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">Sobre mim</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque magnam blanditiis doloremque velit quo assumenda laudantium iusto reiciendis alias. Sed molestiae nobis sit necessitatibus iure neque, quia optio quibusdam!</p>
+        </section>
+
+        <section id="techs">
+            <h2 class="section-title">Habilidades</h2>
+            <p class="section-subtitle">Clique para mais informações.</p>
+            <ul class="icons">
+                <li><a href="http://aws.amazon.com/pt/" target="_blank"><img src="/images/AWS.svg" alt="aws"></a></li>
+                <li><a href="https://getbootstrap.com/" target="_blank"><img src="/images/Bootstrap.svg" alt="bootstrap"></a></li>
+                <li><a href="https://www.docker.com/" target="_blank"><img src="/images/Docker.svg" alt="Docker"></a></li>
+                <li><a href="https://github.com/" target="_blank"><img src="/images/Github.svg" alt="github"></a></li>
+                <li><a href="https://www.jetbrains.com/idea/" target="_blank"><img src="/images/intellij-idea.svg" alt="intellij"></a></li>
+                <li><a href="https://www.java.com/pt-BR/" target="_blank"><img src="/images/Java.svg" alt="java"></a></li>
+                <li><a href="https://www.javascript.com/" target="_blank"><img src="/images/Javascript.svg" alt="js"></a></li>
+                <li><a href="https://mariadb.org/" target="_blank"><img src="/images/MariaDB.svg" alt="MariaDB"></a></li>
+                <li><a href="https://www.php.net/" target="_blank"><img src="/images/PHP.svg" alt="PHP"></a></li>
+                <li><a href="https://www.postman.com/" target="_blank"><img src="/images/Postman.svg" alt="postman"></a></li>
+                <li><a href="https://vercel.com/" target="_blank"><img src="/images/Vercel.svg" alt="Vercel"></a></li>
+            </ul>
+
+        </section>
+    </main>
+
+
+
+
+
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
