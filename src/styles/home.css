@@ -1,6 +1,7 @@
 #home {
     display: flex;
     min-height: calc(100vh -91px);
+    scroll-margin-top: 100px; /* Ajuste conforme a altura da navbar */
 }
 
 #cta {
@@ -8,7 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 #cta .title {
@@ -17,13 +18,13 @@
 }
 
 #cta .title a {
-    font-size: 4rem;
+    font-size: 6rem;
     color: blue;
     text-decoration: none;
 }
 
 #cta .description {
-    font-size: 1.2rem;
+    font-size: 2rem;
 } 
 
 #cta_buttons {
@@ -37,13 +38,6 @@
     background-color: black;
 }
 
-#cta_buttons a {
-    text-decoration: none;
-    color: #ffff;
-    box-shadow: 0px 0px 3px 3px #ffff;
-    border-radius: 12px;
-}
-
 #banner {
     display: flex;
     align-items: start;
@@ -53,10 +47,38 @@
 
 #banner img {
     height: 100%;
-    width: 400px; 
-    height: 550px;
-    margin-right: 150px;
+    width: 600px; 
+    height: 650px;
+    margin-right: 300px;
+    margin-top: 100px;
 }
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid #333;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #333;
+    }
+}
+
 
 @media screen and (max-width: 1000px) {
     #home {
@@ -73,5 +95,111 @@
         width: 100%;
         text-align: center;
         align-items: center;
+    }
+    .typing-effect {
+        display: inline-block;
+        overflow: hidden;
+        border-right: 2px solid #333;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+}
+
+
+
+@media screen and (max-width: 1600px) {
+    #banner img {
+        height: 100%;
+        width: 400px; 
+        height: 550px;
+        margin-right: 100px;
+        margin-top: 100px;
+    }
+
+    #cta .title {
+        font-size: 4rem;
+        color: #ffff;
+    }
+    
+    #cta .title a {
+        font-size: 6rem;
+        color: blue;
+        text-decoration: none;
+    }
+    
+    #cta .description {
+        font-size: 1.5rem;
+    } 
+    .typing-effect {
+        display: inline-block;
+        overflow: hidden;
+        border-right: 2px solid #333;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+    
+}
+
+@media screen and (max-width: 1450px) {
+    #home {
+        min-width: 100%;
+        padding-top: 0px;
+    }
+
+    #banner, 
+    #banner img {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .typing-effect {
+        display: inline-block;
+        overflow: hidden;
+        border-right: 2px solid #333;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+}
+
+
+
+@media screen and (max-width: 2000px) {
+    #banner img {
+        height: 100%;
+        width: 500px; 
+        height: 650px;
+        margin-right: 100px;
+        margin-top: 100px;
+    }
+   
+
+    #cta .title {
+        font-size: 3.5rem;
+        color: #ffff;
+    }
+    
+    #cta .title a {
+        font-size: 3.5rem;
+        color: blue;
+        text-decoration: none;
+    }
+    
+    #cta .description {
+        font-size: 1.2rem;
+    } 
+    .typing-effect {
+        display: inline-block;
+        overflow: hidden;
+        border-right: 2px solid #333;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
     }
 }

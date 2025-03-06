@@ -6,25 +6,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="shortcut icon" href="/images/code.png" type="image/x-icon">
-    <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="src/styles/home.css">
-    <link rel="stylesheet" href="src/styles/about.css">
-    <link rel="stylesheet" href="/src/styles/tech.css">
     <title>Alvaro | Back-end Developer</title>
 </head>
 <body>
     <header>
         <nav id="navbar">      
             <ul id="nav_list">
-                <li class="nav_item active">
+                <li class="nav_item">
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav_item">
                     <a href="#techs">Tecnologias</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#contact">Contato</a>
+                    <a href="#social">Contato</a>
                 </li>
             </ul>
 
@@ -45,7 +41,7 @@
                 </li>
             </ul>
             <button class="btn-default">
-                Fale comigo
+                <a href="#social">Fale comigo</a>
             </button>
         </div>
     </header>
@@ -54,7 +50,9 @@
         <section id="home">
             <div id="cta">
                 <h1 class="title">
-                    Olá, meu nome é <a href="https://linkedin.com/in/1alvaropaiva" target="_blank">Alvaro Paiva.</a>
+                    Olá, me chamo
+                    <br>
+                    <span class="typing-effect"><a href="https://linkedin.com/in/1alvaropaiva" target="_blank">Alvaro Paiva.</a></span>
                 </h1>
                 <p class="description">Desenvolvedor Back-end</p>
                 <div id="cta_buttons">
@@ -73,7 +71,7 @@
 
         <section id="about">
             <h2 class="section-title">Sobre mim</h2>
-            <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque magnam blanditiis doloremque velit quo assumenda laudantium iusto reiciendis alias. Sed molestiae nobis sit necessitatibus iure neque, quia optio quibusdam!</p>
+            <p class="section-subtitle">Sou um técnico em eletrônica que decidiu abraçar o mundo do desenvolvimento e migrar de carreira. Agora me dedico à criação de soluções web e aplicativos de diversos tipos. Minha experiência anterior me deu uma base sólida em resolução de problemas, atenção aos detalhes e análise lógica, habilidades que continuo a aplicar no desenvolvimento de software. Estou sempre buscando aprender novas tecnologias e melhorar minhas habilidades. Estou sempre explorando novas ferramentas e frameworks para expandir meu conhecimento. Uso o GitHub como um repositório não só para projetos e desenvolvimento, como para salvar meus exercícios da faculdade e alguns códigos que podem ser úteis no decorrer do meu desenvolvimento nessa área. No meu GitHub, você encontrará projetos que mostram meu progresso nessa jornada e minha paixão por codificação.</p>
         </section>
 
         <section id="techs">
@@ -92,14 +90,44 @@
                 <li><a href="https://www.postman.com/" target="_blank"><img src="/images/Postman.svg" alt="postman"></a></li>
                 <li><a href="https://vercel.com/" target="_blank"><img src="/images/Vercel.svg" alt="Vercel"></a></li>
             </ul>
+        </section>
 
+        <section id="social">
+            <h2 class="section-title">Minhas redes sociais</h2>
+            <ul class="icons-social">
+                <li><a href="http://linkedin.com/in/1alvaropaiva" target="_blank"><img src="/images/Linkedin.svg" alt="linkedin"></a></li>
+                <li><a href="https://github.com/1alvaropaiva" target="_blank"><img src="/images/Github.svg" alt="github"></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5521971417231" target="_blank"><img src="/images/whatsapp.svg" alt="whatsapp"></a></li>
+            </ul>
+            <p class="section-subtitle">Ou caso prefira...</p>
         </section>
     </main>
 
-
-
-
-
+    <footer id="contact">
+        <div class="footer-container">
+            <h2>Entre em Contato</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-default" id="btn-submit">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </footer>
+    <div class="footer">
+        <p>&copy; Alvaro Paiva</p>
+    </div>
 
     <script src="src/javascript/script.js"></script>
 </body>

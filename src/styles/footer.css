@@ -1,0 +1,81 @@
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.footer-container h2 {
+    color: #ffffff;
+    font-size: 2.1875rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical; 
+}
+
+#btn-submit {
+    margin-top: 30px;
+}
+
+.footer {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+    footer {
+        padding: 20px 10px;
+        margin-bottom: 50px;
+    }
+
+    .footer-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    
+}
+
