@@ -41,3 +41,26 @@
 .icons img:hover {
     transform: scale(1.1); 
 }
+
+@media screen and (max-width: 390px) {
+    .section-title {
+        font-size: 1.5rem; 
+        color: #ffffff; 
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem; 
+        margin-top: 10px; 
+        margin-bottom: 30px; 
+        text-align: center; 
+    }
+
+    .icons {
+        gap: 20px; /* Reduz o espaçamento entre os ícones */
+    }
+
+    .icons img {
+        width: 70px; 
+        height: 70px; 
+    }
+}

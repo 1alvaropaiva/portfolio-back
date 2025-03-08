@@ -42,3 +42,27 @@
 .icons-social img:hover {
     transform: scale(1.1); 
 }
+@media screen and (max-width: 390px) {
+    #techs {
+        padding: 20px; 
+    }
+
+    .section-title {
+        font-size: 1.5rem; 
+        margin-bottom: 30px; 
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem; 
+        margin-bottom: 30px; 
+    }
+
+    .icons-social {
+        gap: 20px; 
+    }
+
+    .icons-social img {
+        width: 60px; 
+        height: 60px; 
+    }
+}

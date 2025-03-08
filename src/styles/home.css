@@ -1,199 +1,57 @@
-#home {
-    display: flex;
-    min-height: calc(100vh -91px);
-    scroll-margin-top: 100px; /* Ajuste conforme a altura da navbar */
-}
-
-#cta {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    margin-top: 10%;
-}
-
-#cta .title {
-    font-size: 4rem;
-    color: #ffff;
-}
-
-#cta .title a {
-    font-size: 6rem;
-    color: blue;
-    text-decoration: none;
-}
-
-#cta .description {
-    font-size: 2rem;
-} 
-
-#cta_buttons {
-    display: flex;
-    gap: 24px;
-}
-
-#cta_buttons #contato {
-    display: flex;
-    gap: 24px;
-    background-color: black;
-}
-
-#banner {
-    display: flex;
-    align-items: start;
-    justify-content: end;
-    width: 70%;
-}
-
-#banner img {
-    height: 100%;
-    width: 600px; 
-    height: 650px;
-    margin-right: 300px;
-    margin-top: 100px;
-}
-.typing-effect {
-    display: inline-block;
-    overflow: hidden;
-    border-right: 2px solid #333;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #333;
-    }
-}
-
-
-@media screen and (max-width: 1000px) {
     #home {
-        min-width: 100%;
-        padding-top: 0px;
-    }
-
-    #banner, 
-    #banner img {
-        display: none;
+        display: flex;
+        min-height: calc(100vh -91px);
+        scroll-margin-top: 100px; /* Ajuste conforme a altura da navbar */
     }
 
     #cta {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
-    .typing-effect {
-        display: inline-block;
-        overflow: hidden;
-        border-right: 2px solid #333;
-        white-space: nowrap;
-        margin: 0 auto;
-        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-}
-
-
-
-@media screen and (max-width: 1600px) {
-    #banner img {
-        height: 100%;
-        width: 400px; 
-        height: 550px;
-        margin-right: 100px;
-        margin-top: 100px;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin-top: 10%;
     }
 
     #cta .title {
         font-size: 4rem;
         color: #ffff;
     }
-    
+
     #cta .title a {
         font-size: 6rem;
         color: blue;
         text-decoration: none;
     }
-    
+
     #cta .description {
-        font-size: 1.5rem;
+        font-size: 2rem;
     } 
-    .typing-effect {
-        display: inline-block;
-        overflow: hidden;
-        border-right: 2px solid #333;
-        white-space: nowrap;
-        margin: 0 auto;
-        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-    
-}
 
-@media screen and (max-width: 1450px) {
-    #home {
-        min-width: 100%;
-        padding-top: 0px;
+    #cta_buttons {
+        display: flex;
+        gap: 24px;
     }
 
-    #banner, 
-    #banner img {
-        display: none;
+    #cta_buttons #contato {
+        display: flex;
+        gap: 24px;
+        background-color: black;
     }
 
-    #cta {
-        width: 100%;
-        text-align: center;
-        align-items: center;
+    #banner {
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        width: 70%;
     }
-    .typing-effect {
-        display: inline-block;
-        overflow: hidden;
-        border-right: 2px solid #333;
-        white-space: nowrap;
-        margin: 0 auto;
-        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
-}
 
-
-
-@media screen and (max-width: 2000px) {
     #banner img {
         height: 100%;
-        width: 500px; 
+        width: 600px; 
         height: 650px;
-        margin-right: 100px;
+        margin-right: 300px;
         margin-top: 100px;
     }
-   
-
-    #cta .title {
-        font-size: 3.5rem;
-        color: #ffff;
-    }
-    
-    #cta .title a {
-        font-size: 3.5rem;
-        color: blue;
-        text-decoration: none;
-    }
-    
-    #cta .description {
-        font-size: 1.2rem;
-    } 
     .typing-effect {
         display: inline-block;
         overflow: hidden;
@@ -202,4 +60,173 @@
         margin: 0 auto;
         animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
     }
-}
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink-caret {
+        from, to {
+            border-color: transparent;
+        }
+        50% {
+            border-color: #333;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        #home {
+            min-width: 100%;
+            padding-top: 0px;
+        }
+
+        #banner, 
+        #banner img {
+            display: none;
+        }
+
+        #cta {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+        .typing-effect {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+    }
+
+
+
+    @media screen and (max-width: 1600px) {
+        #banner img {
+            height: 100%;
+            width: 400px; 
+            height: 550px;
+            margin-right: 100px;
+            margin-top: 100px;
+        }
+
+        #cta .title {
+            font-size: 4rem;
+            color: #ffff;
+        }
+        
+        #cta .title a {
+            font-size: 6rem;
+            color: blue;
+            text-decoration: none;
+        }
+        
+        #cta .description {
+            font-size: 1.5rem;
+        } 
+        .typing-effect {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        
+    }
+
+    @media screen and (max-width: 1450px) {
+        #home {
+            min-width: 100%;
+            padding-top: 0px;
+        }
+
+        #banner, 
+        #banner img {
+            display: none;
+        }
+
+        #cta {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+        .typing-effect {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+    }
+
+
+
+    @media screen and (max-width: 2000px) {
+        #banner img {
+            height: 100%;
+            width: 500px; 
+            height: 650px;
+            margin-right: 100px;
+            margin-top: 100px;
+        }
+    
+
+        #cta .title {
+            font-size: 3.5rem;
+            color: #ffff;
+        }
+        
+        #cta .title a {
+            font-size: 3.5rem;
+            color: blue;
+            text-decoration: none;
+        }
+        
+        #cta .description {
+            font-size: 1.2rem;
+        } 
+        .typing-effect {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 2px solid #333;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+    }
+    @media screen and (max-width: 390px) {
+        #cta .title {
+            font-size: 2.5rem; /* Ajuste o tamanho da fonte do título */
+        }
+        
+        #cta .title a {
+            font-size: 2.5rem; /* Ajuste o tamanho da fonte do link no título */
+        }
+        
+        #cta .description {
+            font-size: 1.2rem; /* Ajuste o tamanho da fonte da descrição */
+        }
+    
+        #cta_buttons {
+            flex-direction: column; /* Altera a direção dos botões para coluna */
+            gap: 12px; /* Reduz o espaçamento entre os botões */
+        }
+    
+        #cta_buttons button {
+            width: 100%; /* Faz os botões ocuparem a largura total */
+            padding: 10px; /* Ajusta o padding dos botões */
+            font-size: 1rem; /* Ajusta o tamanho da fonte dos botões */
+        }
+    
+        .typing-effect {
+            font-size: 1.5rem; /* Ajusta o tamanho da fonte do efeito de digitação */
+        }
+    }
