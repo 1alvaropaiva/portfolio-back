@@ -42,7 +42,7 @@
     transform: scale(1.1); 
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 450px) {
     .section-title {
         font-size: 1.5rem; 
         color: #ffffff; 
@@ -56,7 +56,7 @@
     }
 
     .icons {
-        gap: 20px; /* Reduz o espaçamento entre os ícones */
+        gap: 20px; 
     }
 
     .icons img {

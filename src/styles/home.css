@@ -202,31 +202,31 @@
             animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
         }
     }
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 450px) {
         #cta .title {
-            font-size: 2.5rem; /* Ajuste o tamanho da fonte do título */
+            font-size: 2.5rem; 
         }
         
         #cta .title a {
-            font-size: 2.5rem; /* Ajuste o tamanho da fonte do link no título */
+            font-size: 2.5rem;
         }
         
         #cta .description {
-            font-size: 1.2rem; /* Ajuste o tamanho da fonte da descrição */
+            font-size: 1.2rem; 
         }
     
         #cta_buttons {
-            flex-direction: column; /* Altera a direção dos botões para coluna */
-            gap: 12px; /* Reduz o espaçamento entre os botões */
+            flex-direction: column; 
+            gap: 12px; 
         }
     
         #cta_buttons button {
-            width: 100%; /* Faz os botões ocuparem a largura total */
-            padding: 10px; /* Ajusta o padding dos botões */
-            font-size: 1rem; /* Ajusta o tamanho da fonte dos botões */
+            width: 100%; 
+            padding: 10px; 
+            font-size: 1rem; 
         }
     
         .typing-effect {
-            font-size: 1.5rem; /* Ajusta o tamanho da fonte do efeito de digitação */
+            font-size: 1.5rem; 
         }
     }

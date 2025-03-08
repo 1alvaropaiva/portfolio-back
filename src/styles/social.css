@@ -42,7 +42,7 @@
 .icons-social img:hover {
     transform: scale(1.1); 
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 450px) {
     #techs {
         padding: 20px; 
     }
